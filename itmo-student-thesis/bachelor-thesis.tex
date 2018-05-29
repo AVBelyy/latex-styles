@@ -78,7 +78,7 @@
 
 \studygroup{M3439}
 \title{Пример оформления бакалаврской работы}
-\author{Буздалов Максим Викторович}{Буздалов М.В.}
+\author{Буздалов Максим Викторович}{Буздалова Максима Викторовича}{Буздалов М.В.}{Буздалову М.В.}
 \supervisor{Шалыто Анатолий Абрамович}{Шалыто А.А.}{докт. техн. наук, проф.}{главный научный сотрудник Университета ИТМО}
 \publishyear{2015}
 %% Дата выдачи задания. Можно не указывать, тогда надо будет заполнить от руки.
@@ -138,12 +138,15 @@
 \end{enumerate}}
 
 %%% Использование современных пакетов компьютерных программ и технологий
-\advancedtechnologyusage{Была использована система компьютерной верстки \LaTeX, а в 
-рамках нее следующие пакеты, в порядке появления в стилевом файле: babel, csquotes,
-geometry, amsmath, amssymb, amsthm,
-amsfonts, amsextra, graphicx, xcolor, colortbl, tabu, caption, floatrow, algorithm,
-algorithmicx, algpseudocode, enumitem, setspace, biblatex (а именно biber),
-totcount, longtable, listings, chngcntr, titlesec, titletoc, ifpdf.}
+% \advancedtechnologyusage{Была использована система компьютерной верстки \LaTeX, а в
+% рамках нее следующие пакеты, в порядке появления в стилевом файле: babel, csquotes,
+% geometry, amsmath, amssymb, amsthm,
+% amsfonts, amsextra, graphicx, xcolor, colortbl, tabu, caption, floatrow, algorithm,
+% algorithmicx, algpseudocode, enumitem, setspace, biblatex (а именно biber),
+% totcount, longtable, listings, chngcntr, titlesec, titletoc, ifpdf.}
+
+\addtechnologyusage{Пакет \texttt{algorithmicx}}{\ref{section:listings}}
+\addtechnologyusage{Пакет \texttt{tabu}}{\ref{chapter2}}
 
 %%% Краткая характеристика полученных результатов 
 \researchsummary{Получился, надо сказать, практически неплохой стилевик. В 2015 году 
@@ -237,7 +240,7 @@ Metapost. Последний можно использовать и под \text
 \end{tikzpicture}
 \end{figure}
 
-\section{Листинги}
+\section{Листинги}\label{section:listings}
 
 В работах студентов кафедры <<Компьютерные технологии>> часто встречаются листинги. Листинги бывают
 двух основных видов~--- исходный код и псевдокод. Первый оформляется с помощью окружения \texttt{lstlisting}
@@ -284,7 +287,7 @@ public class HelloWorld {
 \end{lstlisting}
 \end{algorithm}
 
-\chapter{Проверка сквозной нумерации}
+\chapter{Проверка сквозной нумерации}\label{chapter2}
 
 Листинг~\ref{lst4} должен иметь номер 4.
 
